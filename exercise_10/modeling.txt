@@ -1,0 +1,30 @@
+Problema de Otimização: Maximizar o Lucro na Utilização do Espaço de Prateleira
+
+Variáveis de Decisão:
+1. x_G: Quantidade de caixas de Grano a ser colocada na prateleira (em unidades)
+2. x_W: Quantidade de caixas de Wheatie a ser colocada na prateleira (em unidades)
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 1 * x_G + 1.35 * x_W
+    Onde:
+        1 é o lucro por caixa de Grano.
+        1.35 é o lucro por caixa de Wheatie.
+
+Sujeito às Restrições:
+1. Restrição de Espaço de Prateleira (total de 60 pés²):
+    - 0.2 * x_G + 0.4 * x_W <= 60
+
+2. Restrição de Demanda Máxima para Grano:
+    - x_G <= 200
+
+3. Restrição de Demanda Máxima para Wheatie:
+    - x_W <= 120
+
+4. Restrição de Alocação de Espaço:
+    - x_W = 0.675 * x_G  (O espaço destinado ao Wheatie é 35% maior que o destinado ao Grano)
+
+Resultados Otimizados:
+- Quantidade de Caixas de Grano (x_G): (resultado calculado)
+- Quantidade de Caixas de Wheatie (x_W): (resultado calculado)
+- Lucro Total (Z): (resultado calculado)

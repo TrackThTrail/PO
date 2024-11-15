@@ -1,0 +1,16 @@
+Problema de Otimização: Maximizar o Retorno de Investimento
+
+Variáveis de Decisão:
+x: Montante investido no investimento A
+y: Montante investido no investimento B
+
+Função Objetivo:
+Maximizar o retorno total:
+    Max Z = 0.05 * x + 0.08 * y
+
+Sujeito às Restrições:
+1. x + y = 5000                  (Total investido)
+2. x >= 1250                     (Alocação mínima em A: 25% de $5000)
+3. y <= 2500                     (Alocação máxima em B: 50% de $5000)
+4. x >= 0.5 * y                  (Investimento A >= 0.5 * Investimento B)
+5. x >= 0, y >= 0                (Não-negatividade)

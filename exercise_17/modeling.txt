@@ -1,0 +1,16 @@
+Problema de Otimização: Maximizar o Lucro de Moveis
+
+Variáveis de Decisão:
+x: Quantidade de cadeiras a ser produzida
+y: Quantidade de mesas a ser produzida
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 50 * x + 100 * y
+
+Sujeito às Restrições:
+1. x <= 200                      (Máximo de cadeiras na serraria)
+2. y <= 80                       (Máximo de mesas na serraria)
+3. x <= 120                      (Máximo de cadeiras na montagem)
+4. y <= 60                       (Máximo de mesas na montagem)
+5. 110 * x + 150 * y <= 16500    (Capacidade combinada de pintura)

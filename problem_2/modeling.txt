@@ -1,0 +1,40 @@
+Problema de Otimização: Maximizar o Lucro na Produção de Gasolina
+
+Variáveis de Decisão:
+1. g_sa: Quantidade de Gasolina SuperAzul produzida (em barris)
+2. g_a: Quantidade de Gasolina Azul produzida (em barris)
+3. g_am: Quantidade de Gasolina Amarela produzida (em barris)
+
+Variáveis Auxiliares:
+1. p1_sa, p2_sa, p3_sa: Frações dos petróleos 1, 2 e 3 na produção da Gasolina SuperAzul
+2. p1_a, p2_a: Frações dos petróleos 1 e 2 na produção da Gasolina Azul
+3. p1_am: Fração do petróleo 1 na produção da Gasolina Amarela
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 35 * g_sa + 28 * g_a + 22 * g_am 
+            - (19 * (p1_sa + p1_a + p1_am) + 24 * (p2_sa + p2_a) + 20 * p3_sa)
+
+Sujeito às Restrições:
+1. Disponibilidade de Petróleo:
+    - p1_sa + p1_a + p1_am <= 3500    (Limite do Petróleo 1)
+    - p2_sa + p2_a <= 2200            (Limite do Petróleo 2)
+    - p3_sa <= 4200                   (Limite do Petróleo 3)
+
+2. Composição da Gasolina SuperAzul:
+    - p1_sa <= 0.3 * g_sa
+    - p2_sa >= 0.4 * g_sa
+    - p3_sa <= 0.5 * g_sa
+
+3. Composição da Gasolina Azul:
+    - p1_a <= 0.3 * g_a
+    - p2_a >= 0.1 * g_a
+
+4. Composição da Gasolina Amarela:
+    - p1_am <= 0.7 * g_am
+
+Resultados Otimizados:
+- Gasolina SuperAzul produzida (g_sa): (resultado calculado)
+- Gasolina Azul produzida (g_a): (resultado calculado)
+- Gasolina Amarela produzida (g_am): (resultado calculado)
+- Lucro Total (Z): (resultado calculado)

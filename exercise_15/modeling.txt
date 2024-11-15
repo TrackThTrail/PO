@@ -1,0 +1,40 @@
+Problema de Otimização: Maximizar o Alcance de uma Campanha Publicitária
+
+Variáveis de Decisão:
+1. x_1: Número de comerciais de rádio a serem comprados
+2. x_2: Número de anúncios de TV a serem comprados
+
+Função Objetivo:
+Maximizar o alcance total da campanha publicitária:
+    Max Z = 7000 + 2000 * x_1 + 3000 * x_2
+    Onde:
+        7000 é o alcance inicial (primeiro comercial de rádio e primeiro anúncio de TV).
+        2000 * x_1 é o alcance adicional dos comerciais de rádio.
+        3000 * x_2 é o alcance adicional dos anúncios de TV.
+
+Sujeito às Restrições:
+1. Restrição de Orçamento Total:
+    - 300 * x_1 + 2000 * x_2 <= 20000
+    (O orçamento total alocado para a campanha publicitária não pode ultrapassar $20.000).
+
+2. Limite de Alocação por Mídia:
+    - 300 * x_1 <= 16000
+    (O valor máximo a ser alocado para a mídia rádio não pode ultrapassar $16.000).
+    - 2000 * x_2 <= 16000
+    (O valor máximo a ser alocado para a mídia TV não pode ultrapassar $16.000).
+
+3. Restrição de Mínimo de Comerciais e Anúncios:
+    - x_1 >= 1
+    (Pelo menos 1 comercial de rádio deve ser comprado).
+    - x_2 >= 1
+    (Pelo menos 1 anúncio de TV deve ser comprado).
+
+4. Restrições de Não Negatividade:
+    - x_1 >= 0
+    - x_2 >= 0
+    (O número de comerciais e anúncios não pode ser negativo).
+
+Resultados Otimizados:
+- Número de Comerciais de Rádio (x_1): (resultado calculado)
+- Número de Anúncios de TV (x_2): (resultado calculado)
+- Alcance Total: (resultado calculado) pessoas

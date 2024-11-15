@@ -1,0 +1,15 @@
+Problema de Otimização: Maximizar o Lucro da Produção
+
+Variáveis de Decisão:
+x: Quantidade do produto A a ser produzido
+y: Quantidade do produto B a ser produzido
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 20 * x + 50 * y
+
+Sujeito às Restrições:
+1. x >= 0.8 * (x + y)            (Vendas de A >= 80% do total de A e B)
+2. x <= 100                      (Limite máximo de vendas de A por dia)
+3. 2 * x + 4 * y <= 240          (Disponibilidade máxima de matéria-prima: 240 lb)
+4. x >= 0, y >= 0                (Não-negatividade)

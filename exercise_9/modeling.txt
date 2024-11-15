@@ -1,0 +1,30 @@
+Problema de Otimização: Maximizar o Lucro na Produção de Produtos de Limpeza
+
+Variáveis de Decisão:
+1. x_A: Quantidade de unidades do produto A a ser produzida (em unidades)
+2. x_B: Quantidade de unidades do produto B a ser produzida (em unidades)
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 8 * x_A + 10 * x_B
+    Onde:
+        8 é o lucro por unidade do produto A.
+        10 é o lucro por unidade do produto B.
+
+Sujeito às Restrições:
+1. Restrição de Matéria-prima I (limitada a 150 unidades por dia):
+    - 0.5 * x_A + 0.5 * x_B <= 150
+
+2. Restrição de Matéria-prima II (limitada a 145 unidades por dia):
+    - 0.6 * x_A + 0.4 * x_B <= 145
+
+3. Restrição de Demanda para o Produto A:
+    - 30 <= x_A <= 150
+
+4. Restrição de Demanda para o Produto B:
+    - 40 <= x_B <= 200
+
+Resultados Otimizados:
+- Quantidade de Produto A (x_A): (resultado calculado)
+- Quantidade de Produto B (x_B): (resultado calculado)
+- Lucro Total (Z): (resultado calculado)

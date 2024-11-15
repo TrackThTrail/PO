@@ -1,0 +1,14 @@
+Problema de Otimização: Maximizar a Receita Bruta
+
+Variáveis de Decisão:
+x: Liga de Baixa a ser produzido
+y: Liga de Alta a ser produzido
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 20 * x + 50 * y
+
+Sujeito às Restrições:
+1. x * 0.5 + y * 0.2 <= 16       (Restrição de cobre)
+2. x * 0.25 + y * 0.3 <= 11      (Restrição de zinco)
+3. x * 0.25 + y * 0.5 <= 15      (Restrição de chumbo)

@@ -1,0 +1,36 @@
+Problema de Otimização: Minimizar as Horas Ociosas nas Estações de Trabalho na Produção de Rádios
+
+Variáveis de Decisão:
+1. x_1: Número de unidades do modelo HiFi-1 produzidas por dia
+2. x_2: Número de unidades do modelo HiFi-2 produzidas por dia
+
+Função Objetivo:
+Minimizar as horas ociosas nas estações de trabalho:
+    Min Z = (480 - (6 * x_1 + 4 * x_2)) * 0.10 + (480 - (5 * x_1 + 5 * x_2)) * 0.14 + (480 - (4 * x_1 + 6 * x_2)) * 0.12
+    Onde:
+        (480 - (6 * x_1 + 4 * x_2)) * 0.10 representa a ociosidade da estação 1, com 10% do tempo total disponível para a manutenção.
+        (480 - (5 * x_1 + 5 * x_2)) * 0.14 representa a ociosidade da estação 2, com 14% do tempo total disponível para a manutenção.
+        (480 - (4 * x_1 + 6 * x_2)) * 0.12 representa a ociosidade da estação 3, com 12% do tempo total disponível para a manutenção.
+
+Sujeito às Restrições:
+1. Restrição de Tempo na Estação 1:
+    - 6 * x_1 + 4 * x_2 <= 432
+    (O tempo total de montagem na estação 1 não pode exceder 432 minutos, considerando a manutenção de 10%).
+
+2. Restrição de Tempo na Estação 2:
+    - 5 * x_1 + 5 * x_2 <= 412.8
+    (O tempo total de montagem na estação 2 não pode exceder 412.8 minutos, considerando a manutenção de 14%).
+
+3. Restrição de Tempo na Estação 3:
+    - 4 * x_1 + 6 * x_2 <= 422.4
+    (O tempo total de montagem na estação 3 não pode exceder 422.4 minutos, considerando a manutenção de 12%).
+
+4. Restrições de Não Negatividade:
+    - x_1 >= 0
+    - x_2 >= 0
+    (O número de unidades produzidas não pode ser negativo).
+
+Resultados Otimizados:
+- Número de unidades do modelo HiFi-1 (x_1): (resultado calculado)
+- Número de unidades do modelo HiFi-2 (x_2): (resultado calculado)
+- Horas Ociosas Totais: (resultado calculado)

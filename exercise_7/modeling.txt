@@ -1,0 +1,30 @@
+Problema de Otimização: Maximizar o Retorno do Investimento
+
+Variáveis de Decisão:
+1. x_A: Valor investido no investimento A (em dólares)
+2. x_B: Valor investido no investimento B (em dólares)
+
+Função Objetivo:
+Maximizar o retorno total:
+    Max Z = 0.05 * x_A + 0.08 * x_B
+    Onde:
+        0.05 é a taxa de retorno do investimento A (5%).
+        0.08 é a taxa de retorno do investimento B (8%).
+
+Sujeito às Restrições:
+1. O total de investimento deve ser $5.000:
+    - x_A + x_B = 5000
+
+2. No mínimo 25% do total deve ser investido em A:
+    - x_A >= 0.25 * 5000 = 1250
+
+3. No máximo 50% do total pode ser investido em B:
+    - x_B <= 0.50 * 5000 = 2500
+
+4. O investimento em A deve ser no mínimo metade do investimento em B:
+    - x_A >= 0.5 * x_B
+
+Resultados Otimizados:
+- Investimento em A (x_A): (resultado calculado)
+- Investimento em B (x_B): (resultado calculado)
+- Retorno Total (Z): (resultado calculado)

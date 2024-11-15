@@ -1,0 +1,35 @@
+Problema de Otimização: Maximizar o Lucro na Produção de Camisas e Blusas
+
+Variáveis de Decisão:
+1. x_1: Número de camisas produzidas por semana
+2. x_2: Número de blusas produzidas por semana
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Z = 8 * x_1 + 12 * x_2
+    Onde:
+        8 * x_1 é o lucro gerado pela produção das camisas (R$ 8 por camisa).
+        12 * x_2 é o lucro gerado pela produção das blusas (R$ 12 por blusa).
+
+Sujeito às Restrições:
+1. Restrição de Tempo no Departamento de Corte:
+    - 20 * x_1 + 60 * x_2 <= 2400
+    (O tempo total de corte não pode exceder 2400 minutos por semana, dado que existem 25 trabalhadores no departamento de corte e cada um trabalha 2400 minutos por semana).
+
+2. Restrição de Tempo no Departamento de Costura:
+    - 70 * x_1 + 60 * x_2 <= 84000
+    (O tempo total de costura não pode exceder 84000 minutos por semana, dado que existem 35 trabalhadores no departamento de costura e cada um trabalha 2400 minutos por semana).
+
+3. Restrição de Tempo no Departamento de Embalagem:
+    - 12 * x_1 + 4 * x_2 <= 12000
+    (O tempo total de embalagem não pode exceder 12000 minutos por semana, dado que existem 5 trabalhadores no departamento de embalagem e cada um trabalha 2400 minutos por semana).
+
+4. Restrições de Não Negatividade:
+    - x_1 >= 0
+    - x_2 >= 0
+    (O número de camisas e blusas produzidas não pode ser negativo).
+
+Resultados Otimizados:
+- Número de Camisas (x_1): (resultado calculado)
+- Número de Blusas (x_2): (resultado calculado)
+- Lucro Total: (resultado calculado)

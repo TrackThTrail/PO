@@ -1,0 +1,31 @@
+Problema de Otimização: Maximizar o Prazer de Jack ao Alocar Seu Tempo entre Estudo e Diversão
+
+Variáveis de Decisão:
+1. x_S: Número de horas que Jack vai dedicar ao estudo (em horas)
+2. x_D: Número de horas que Jack vai dedicar à diversão (em horas)
+
+Função Objetivo:
+Maximizar o prazer total:
+    Max Z = 2 * x_D + x_S
+    Onde:
+        2 * x_D é o prazer de se divertir (se divertir é duas vezes mais interessante que estudar).
+        x_S é o prazer de estudar.
+
+Sujeito às Restrições:
+1. Restrição de Tempo Total (tempo total entre estudo e diversão):
+    - x_S + x_D <= 10
+
+2. Restrição de Tempo de Diversão (não pode se divertir mais que 4 horas):
+    - x_D <= 4
+
+3. Restrição de Estudo Não Pode Ser Menor Que Diversão (deve estudar pelo menos o mesmo tempo que se diverte):
+    - x_S >= x_D
+
+4. Restrições de Não Negatividade:
+    - x_S >= 0
+    - x_D >= 0
+
+Resultados Otimizados:
+- Tempo de Estudo (x_S): (resultado calculado)
+- Tempo de Diversão (x_D): (resultado calculado)
+- Prazer Total (Z): (resultado calculado)

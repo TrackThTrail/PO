@@ -1,0 +1,33 @@
+Problema de Otimização: Maximizar o Lucro na Produção de Chapéus de Vaqueiro
+
+Variáveis de Decisão:
+1. x_1: Número de chapéus do tipo 1 produzidos por dia
+2. x_2: Número de chapéus do tipo 2 produzidos por dia
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max L = 8 * x_1 + 5 * x_2
+    Onde:
+        8 * x_1 é o lucro gerado pela produção dos chapéus do tipo 1 (R$ 8 por chapéu).
+        5 * x_2 é o lucro gerado pela produção dos chapéus do tipo 2 (R$ 5 por chapéu).
+
+Sujeito às Restrições:
+1. Restrição de Tempo de Trabalho Total:
+    - 2 * x_1 + x_2 <= 400
+    (O tempo total necessário para produzir os chapéus do tipo 1 e do tipo 2 não pode exceder 400 horas de trabalho).
+
+2. Limite de Produção no Mercado:
+    - x_1 <= 150
+    (O mercado pode absorver no máximo 150 chapéus do tipo 1 por dia).
+    - x_2 <= 200
+    (O mercado pode absorver no máximo 200 chapéus do tipo 2 por dia).
+
+3. Restrições de Não Negatividade:
+    - x_1 >= 0
+    - x_2 >= 0
+    (O número de chapéus produzidos não pode ser negativo).
+
+Resultados Otimizados:
+- Número de Chapéus do Tipo 1 (x_1): (resultado calculado)
+- Número de Chapéus do Tipo 2 (x_2): (resultado calculado)
+- Lucro Total: (resultado calculado)
