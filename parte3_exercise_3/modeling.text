@@ -1,0 +1,22 @@
+
+### Snippet de Modelagem
+
+Este modelo de otimização utiliza o PuLP para maximizar o lucro de uma refinaria que processa petróleo bruto em gasolina e gás/óleo, considerando as seguintes restrições de capacidade:
+
+- **Capacidades Máximas**:
+  - **Gasolina**:
+    - Destilação: 500.000.
+    - Dessulfuração: 700.000.
+    - Reforming: 400.000.
+  - **Gás/Óleo**:
+    - Destilação: 600.000.
+    - Dessulfuração: 500.000.
+    - Cracking: 450.000.
+    
+- **Função Objetivo**: Maximizar o lucro, com ganhos de R$ 10 por unidade de gasolina e R$ 7 por unidade de gás/óleo.
+
+- **Restrições**:
+  - Reforming e Cracking limitam diretamente a produção.
+  - Destilação e Dessulfuração impõem limites combinados às duas produções.
+
+O modelo resolve o problema usando variáveis contínuas, reescrevendo divisões em restrições como multiplicações para compatibilidade com o PuLP. O resultado final determina as quantidades ótimas de gasolina e gás/óleo a serem produzidas para maximizar o lucro total.

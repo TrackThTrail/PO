@@ -1,0 +1,47 @@
+Problema de Otimização: Maximizar o Lucro na Produção de Calças e Camisas
+
+Variáveis de Decisão:
+1. x1: Quantidade de lotes de calças a produzir
+2. x2: Quantidade de lotes de camisas a produzir
+
+Função Objetivo:
+Maximizar o lucro total:
+    Max Lucro = 500 * x1 + 800 * x2
+    Onde:
+        500 * x1 é o lucro gerado pela produção de lotes de calças (R$ 500 por lote).
+        800 * x2 é o lucro gerado pela produção de lotes de camisas (R$ 800 por lote).
+
+Sujeito às Restrições:
+1. Restrição de Mão de Obra Não Especializada:
+    - 10 * x1 + 20 * x2 <= 50
+    (O total de horas de trabalho não especializado para produzir os lotes não pode exceder 50 horas).
+
+2. Restrição de Mão de Obra Especializada:
+    - 10 * x2 <= 30
+    (O total de horas de trabalho especializado para produzir os lotes de camisas não pode exceder 30 horas).
+
+3. Restrição de Capacidade da Máquina 1:
+    - 20 * x1 + 10 * x2 <= 80
+    (O tempo total de uso da máquina 1 para produção dos lotes não pode exceder 80 horas).
+
+4. Restrição de Capacidade da Máquina 2:
+    - 30 * x1 + 35 * x2 <= 130
+    (O tempo total de uso da máquina 2 para produção dos lotes não pode exceder 130 horas).
+
+5. Restrição de Matéria-Prima A:
+    - 12 * x1 + 8 * x2 <= 120
+    (O total de quilos de matéria-prima A usada para produção dos lotes não pode exceder 120 quilos).
+
+6. Restrição de Matéria-Prima B:
+    - 10 * x1 + 15 * x2 <= 100
+    (O total de quilos de matéria-prima B usada para produção dos lotes não pode exceder 100 quilos).
+
+7. Restrições de Não Negatividade:
+    - x1 >= 0
+    - x2 >= 0
+    (A quantidade de lotes produzidos não pode ser negativa).
+
+Resultados Otimizados:
+- Lotes de calças a produzir (x1): (resultado calculado)
+- Lotes de camisas a produzir (x2): (resultado calculado)
+- Lucro total: (resultado calculado)

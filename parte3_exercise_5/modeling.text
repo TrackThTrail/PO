@@ -1,0 +1,44 @@
+Modelagem Matemática para Alocação de Leitos Hospitalares
+
+Objetivo:
+Esta modelagem visa resolver diferentes problemas relacionados à alocação de leitos hospitalares, otimizando recursos e atendendo a restrições operacionais. São abordados quatro objetivos principais:
+1. Minimizar a mão de obra necessária.
+2. Maximizar a arrecadação global.
+3. Maximizar o número de leitos disponíveis.
+4. Minimizar o espaço ocupado.
+
+Variáveis de Decisão:
+- x1: Quantidade de leitos do tipo 1.
+- x2: Quantidade de leitos do tipo 2.
+- x3: Quantidade de leitos do tipo 3.
+
+Funções Objetivo:
+1. **Minimizar a mão de obra**:
+   - \( \text{work} = 1 \cdot x1 + 0.8 \cdot x2 + 0.8 \cdot x3 \)
+2. **Maximizar a arrecadação global**:
+   - \( \text{problem} = x1 + \frac{1}{2} \cdot x2 + \frac{1}{3} \cdot x3 \)
+3. **Maximizar o número de leitos**:
+   - \( \text{leitos} = 1 \cdot x1 + 2 \cdot x2 + 3 \cdot x3 \)
+4. **Minimizar o espaço ocupado**:
+   - \( \text{space} = 10 \cdot x1 + 14 \cdot x2 + 17 \cdot x3 \)
+
+Restrições:
+1. O número total de leitos não pode exceder 70:
+   - \( x1 + x2 + x3 \leq 70 \)
+2. O número de leitos ponderados deve ser no mínimo 120:
+   - \( 1 \cdot x1 + 2 \cdot x2 + 3 \cdot x3 \geq 120 \)
+3. A proporção de leitos do tipo 1 deve estar entre 15% e 30% do total:
+   - \( x1 \leq 0.3 \cdot (x1 + x2 + x3) \)
+   - \( x1 \geq 0.15 \cdot (x1 + x2 + x3) \)
+
+Metodologia:
+O problema foi modelado utilizando o pacote `PuLP` em Python, que permite a definição e solução de problemas de programação linear. Cada objetivo foi tratado como um problema independente, compartilhando as mesmas restrições.
+
+Resultados:
+A solução de cada problema retorna:
+- Valores ótimos para as variáveis \( x1, x2, x3 \).
+- O valor da função objetivo correspondente a cada abordagem.
+- O status da solução.
+
+Conclusão:
+Esta modelagem fornece uma abordagem estruturada para alocar recursos hospitalares de forma eficiente, permitindo a tomada de decisão com base em diferentes prioridades operacionais.

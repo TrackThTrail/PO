@@ -1,0 +1,28 @@
+# Texto da Modelagem do Problema da Frota de Ônibus
+
+# Introdução:
+# Este problema modela a alocação de ônibus para atender à demanda de transporte em um corredor ao longo de 24 horas,
+# minimizando os custos adicionais causados pelo excesso de ônibus em operação. Cada ônibus opera por 6 horas consecutivas,
+# e há um custo associado a cada unidade excedente da demanda.
+
+# 1. Conjuntos:
+# i: Período do dia (1 a 24).
+
+# 2. Parâmetros:
+# bi: Demanda mínima de ônibus requerida no período i.
+# c: Custo por ônibus/hora quando o número de ônibus excede a demanda mínima.
+# h: Período de operação de cada ônibus (6 horas consecutivas).
+
+# 3. Variáveis de decisão:
+# xi: Número de ônibus iniciando sua operação no período i (variável inteira não negativa).
+# ei: Excesso de ônibus operando no período i (variável contínua não negativa).
+
+# 4. Função objetivo:
+# Minimizamos o custo adicional total causado pelo excesso de ônibus:
+# Minimize ∑(ei * c) para i em {1, 2, ..., 24}.
+
+# 5. Restrições:
+# a. Para cada período i, o número de ônibus operando deve ser maior ou igual à demanda mínima:
+#    ∑(xi das j-ésimas horas que cobrem o período i) - ei ≥ bi, ∀i.
+# b. Variáveis de decisão devem ser não negativas:
+#    xi ≥ 0 e ei ≥ 0, ∀i.

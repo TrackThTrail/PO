@@ -1,0 +1,48 @@
+Problema de Otimização: Maximizar a Importância dos Suprimentos de Resgate
+
+Variáveis de Decisão:
+1. x1: Quantidade de caixas de alimento transportadas
+2. x2: Quantidade de caixas de água transportadas
+3. x3: Quantidade de caixas de munição transportadas
+4. x4: Quantidade de caixas de remédios transportadas
+
+Função Objetivo:
+Maximizar a importância dos suprimentos transportados:
+    Max Z = 1 * x1 + 2 * x2 + 4 * x3 + 4 * x4
+    Onde:
+        1 * x1: Importância de cada caixa de alimento (peso 1).
+        2 * x2: Importância de cada caixa de água (peso 2).
+        4 * x3: Importância de cada caixa de munição (peso 4).
+        4 * x4: Importância de cada caixa de remédios (peso 4).
+
+Sujeito às Restrições:
+1. Restrição de Capacidade Total do Helicóptero:
+    - x1 + x2 + x3 + x4 <= 7
+    (O helicóptero só pode transportar até 7 caixas).
+
+2. Necessidade Mínima de Alimentos:
+    - x1 >= 6
+    (São necessárias pelo menos 6 caixas de alimentos).
+
+3. Necessidade Mínima de Água:
+    - x2 >= 4
+    (São necessárias pelo menos 4 caixas de água).
+
+4. Necessidade Mínima de Munição:
+    - x3 >= 2
+    (São necessárias pelo menos 2 caixas de munição).
+
+5. Necessidade Mínima de Remédios:
+    - x4 >= 2
+    (São necessárias pelo menos 2 caixas de remédios).
+
+6. Restrições de Não Negatividade:
+    - x1, x2, x3, x4 >= 0
+    (As quantidades de caixas não podem ser negativas).
+
+Resultados Otimizados:
+- Quantidade de caixas de alimentos (x1): (resultado calculado)
+- Quantidade de caixas de água (x2): (resultado calculado)
+- Quantidade de caixas de munição (x3): (resultado calculado)
+- Quantidade de caixas de remédios (x4): (resultado calculado)
+- Importância total: (resultado calculado)
